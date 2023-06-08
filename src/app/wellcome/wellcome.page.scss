@@ -1,0 +1,35 @@
+.header-title {
+  font-size: 24px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.logo-text {
+  font-size: 36px;
+  color: #ff7f50;
+}
+
+.welcome-text {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btns {
+  text-align: center;
+}
+
+.join-btn,
+.learn-more-btn {
+  margin-top: 20px;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}

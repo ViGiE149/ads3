@@ -1,0 +1,48 @@
+.home-content {
+  --ion-background-color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.content-wrapper {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.logo-text {
+  font-size: 48px;
+  color: #ff7f50;
+}
+
+.slogan {
+  font-size: 24px;
+  color: #333;
+  margin-top: 10px;
+}
+
+.description {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.explore-btn,
+.signin-btn {
+  margin-top: 20px;
+  width: 200px;
+}

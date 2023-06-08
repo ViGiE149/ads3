@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="header-title">PASSWORD UPDATE</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="logo-container">
+    <ion-icon name="person-add-sharp"  style="zoom: 6;"></ion-icon>
+  </div>
+  <form (ngSubmit)="signUp()" class="registration-form">
+    <ion-list>
+      <ion-item class="form-item">
+        <ion-icon name="person-add" class="icon"></ion-icon>
+        <ion-input [(ngModel)]="_name" name="name" type="text" placeholder="Name"></ion-input>
+      </ion-item>
+
+      <ion-item class="form-item">
+        <ion-icon name="person" class="icon"></ion-icon>
+        <ion-input [(ngModel)]="surname" name="surname" type="text" placeholder="Surname"></ion-input>
+      </ion-item>
+
+      <ion-item class="form-item">
+        <ion-icon name="mail" class="icon"></ion-icon>
+        <ion-input [(ngModel)]="email" name="email" type="email" placeholder="Email"></ion-input>
+      </ion-item>
+
+      <ion-item class="form-item">
+        <ion-icon name="lock-closed" class="icon"></ion-icon>
+        <ion-input [(ngModel)]="password" name="password" type="password" placeholder="Password"></ion-input>
+      </ion-item>
+
+      <ion-item class="form-item">
+        <ion-icon name="lock-closed" class="icon"></ion-icon>
+        <ion-input [(ngModel)]="confirmPassword" name="confirmPassword" type="password" placeholder="Confirm Password"></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <div class="btns">
+      <ion-button type="submit" class="signup-btn">Sign Up</ion-button>
+      <span>
+        <ion-button class="sIn" fill="outline" routerLink="/sign-in">Sign In</ion-button><br><br>
+      </span>
+    </div>
+  </form>
+</ion-content>

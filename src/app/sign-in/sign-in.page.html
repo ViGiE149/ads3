@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="header-title">SIGN IN</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="fingerPrint">
+  <ion-icon name="person-sharp"  style="zoom: 6;"></ion-icon>
+  </div>
+  <form (ngSubmit)="signIn()" class="login-form">
+    <div class="container">
+      <ion-list>
+        <div class="logo-container">
+      
+        </div>
+        <ion-item class="form-item">
+          <ion-icon name="mail" class="icon"></ion-icon>
+          <ion-input [(ngModel)]="email" name="email" type="email" placeholder="Email" required></ion-input>
+        </ion-item>
+        
+        <ion-item class="form-item">
+          <ion-icon name="lock-closed" class="icon"></ion-icon>
+          <ion-input [(ngModel)]="password" name="password" type="password" placeholder="Password" required>
+            
+          </ion-input>
+        </ion-item>
+        <p>forgot password: <span routerLink="/reset">click here</span></p>
+        <br>
+        <div class="btns">
+          <ion-button fill="outline" routerLink="/sign-up">Sign Up</ion-button>
+          <span>&nbsp;&nbsp;&nbsp;</span>
+          <ion-button type="submit" class="signin-btn">Sign In</ion-button>
+        </div>
+        <br>
+      </ion-list>
+     
+    </div>
+  </form>
+</ion-content>
